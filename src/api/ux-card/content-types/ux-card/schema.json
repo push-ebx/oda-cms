@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ux_cards",
+  "info": {
+    "singularName": "ux-card",
+    "pluralName": "ux-cards",
+    "displayName": "ux-card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "centered",
+        "two"
+      ],
+      "default": "left",
+      "required": true
+    },
+    "title_1": {
+      "type": "string",
+      "required": true
+    },
+    "title_2": {
+      "type": "string"
+    },
+    "description_1": {
+      "type": "string",
+      "required": true
+    },
+    "description_2": {
+      "type": "string"
+    },
+    "image_1": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "image_2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": false
+    }
+  }
+}
